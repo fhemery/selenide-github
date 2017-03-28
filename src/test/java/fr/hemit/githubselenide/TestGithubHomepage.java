@@ -14,12 +14,11 @@ import org.junit.Test;
 
 import com.codeborne.selenide.SelenideElement;
 
-public class TestGithubHomepage {
+public class TestGithubHomepage extends BaseTest {
 
 	@Before
 	public void setUp() {
-		browser = "chrome";
-		System.setProperty("webdriver.chrome.driver", "D:\\Programs\\chromedriver.exe");
+		super.setUp();
 		open("https://www.github.com");
 	}
 	

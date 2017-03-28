@@ -8,7 +8,7 @@ public class VeryBasicTest {
 
 	@Test
 	public void test() {
-		assertEquals(5, 3+3);
+		assertEquals(6, 3+3);
 	}
 
 }
