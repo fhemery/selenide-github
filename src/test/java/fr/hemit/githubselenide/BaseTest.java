@@ -7,7 +7,10 @@ import org.junit.Before;
 public class BaseTest {
 	@Before
 	public void setUp(){
-		browser = "chrome";
+		if (System.getProperty("selenide.browser") == null){
+			browser = "chrome";
+		}
 		System.setProperty("webdriver.chrome.driver", "D:\\Programs\\chromedriver.exe");
+		
 	}
 }

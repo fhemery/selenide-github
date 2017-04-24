@@ -9,6 +9,7 @@ import static org.junit.Assert.*;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.codeborne.selenide.Selenide;
@@ -16,6 +17,7 @@ import com.codeborne.selenide.SelenideElement;
 
 import utils.AuthenticationUtils;
 
+@Ignore
 public class IssueCreationTest extends BaseTest {
 
 	@Before
